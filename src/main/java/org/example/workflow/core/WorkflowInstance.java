@@ -8,6 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Represents a running instance of a workflow for a specific entity.
+ * Tracks the current state of the entity and handles transitions
+ * between states based on triggered events.
+ *
+ * <p>Each entity being processed by a workflow has its own workflow instance.</p>
+ *
+ * @author Oliver-Victorxavier
+ * @since 1.0
+ */
 public class WorkflowInstance {
     private String id;
     private Workflow workflow;
